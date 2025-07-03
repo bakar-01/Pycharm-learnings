@@ -78,3 +78,45 @@ print(cars)  # Displaying the updated list
 #looping array elements
 for x in cars:
     print(x)
+
+
+# PYTHON OBJECT ORIENTED PROGRAMMING
+class MyClass:
+    x = 5 * 20
+p1 = MyClass()
+print(p1.x)
+
+
+# THE __init__() FUNCTION
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+p1 =  Person('john',23)
+print('The name is ' + p1.name)
+print('The age is ' + str (p1.age))
+
+# THE __str__() FUNCTION
+# STRING REPRESENTATION OF AN OBJECT WITHOUT USING THE __str__() FUNCTION
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+p1 =  Person('john',23)
+print(p1)
+#
+#
+
+#
+#
+
+# STRING REPRESENTATION OF AN OBJECT WITH THE __str__() FUNCTION
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    def __str__(self):
+        return f'{self.name} ({self.age})'
+p1 =  Person('john',23)
+print(p1)
+
